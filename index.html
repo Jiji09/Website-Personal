@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <button id="theme-toggle" aria-label="Toggle dark/light mode">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                </button>
+                <h1>YTDownload by Panji</h1>
+            </div>
+            <nav>
+                <ul>
+                    <!-- <li><a href="#">Home</a></li> --> <!-- Teks "Home" dihilangkan -->
+                    <li><a href="about.html">About</a></li> <!-- Link ke halaman About -->
+                    <li><a href="https://wa.me/+6285766648519" target="_blank">Contact</a></li> <!-- Ganti nomor dengan nomor WhatsApp Anda -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section class="upload-section">
+                <h2>Download Video YouTube</h2> <!-- Teks di sini -->
+                <form id="upload-form">
+                    <div class="file-input-wrapper">
+                        <input type="text" id="file-input" name="file" placeholder="Tempelkan link YouTube di sini" required>
+                        <button type="submit"><i class="fas fa-download"></i> Download</button> <!-- Ganti teks tombol di sini -->
+                    </div>
+                </form>
+            </section>
+            <section class="result-section" id="result-section">
+                <h2>Conversion Result</h2>
+                <div id="result-container"></div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 File Converter. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+/* Reset default margins */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a; /* Background gelap untuk mode malam */
+    color: #ffffff; /* Teks putih untuk mode malam */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.light-mode {
+    background-color: #ffffff; /* Background putih untuk mode siang */
+    color: #000000; /* Teks hitam untuk mode siang */
+}
+
+header {
+    background-color: #1a1a1a; /* Warna latar belakang header sesuai dengan mode malam */
+    color: inherit; /* Warna teks mengikuti warna dari body */
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #ffffff; /* Warna putih untuk "File Converter" */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #ffffff; /* Warna putih untuk link di header */
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav ul li button {
+    background: none;
+    border: none;
+    color: #ffffff; /* Warna putih untuk tombol di header */
+    cursor: pointer;
+    font-size: 24px;
+}
+
+main {
+    flex: 1; /* Membuat main content mengisi ruang yang tersisa */
+    padding: 40px 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.upload-section, .result-section {
+    background-color: transparent; /* Menghilangkan latar belakang */
+    border: 2px solid; /* Menambahkan border */
+    border-color: #00bfff; /* Warna biru terang untuk border */
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #888888; /* Warna abu-abu untuk teks di bagian ini */
+    transition: border-color 0.3s; /* Transisi warna border */
+}
+
+.upload-section h2, .result-section h2 {
+    margin-top: 0;
+    color: #888888; /* Warna abu-abu untuk heading di bagian ini */
+}
+
+.file-input-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #555555; /* Warna border yang lebih terang */
+    border-radius: 4px;
+    background-color: #222222; /* Latar belakang input file */
+    color: #ffffff; /* Teks input file */
+    width: 300px; /* Sesuaikan lebar input teks sesuai kebutuhan */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #000000; /* Warna hitam untuk tombol */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+button i {
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #333333; /* Warna hitam yang lebih gelap saat hover */
+}
+
+footer {
+    background-color: #000000; /* Warna hitam untuk latar belakang footer */
+    color: #ffffff; /* Teks putih untuk footer */
+    text-align: center;
+    padding: 10px 0; /* Mengatur padding footer */
+    margin: 0;
+    font-size: 14px; /* Ukuran font footer */
+}
